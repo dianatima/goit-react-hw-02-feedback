@@ -14,7 +14,6 @@ export class Feedback extends Component {
 
     onButtonHandle = event => {
       let stateName = event.currentTarget.name;
-      console.log(stateName);
       this.setState(prevState => {
           return {[stateName]: prevState[stateName] + 1}
     })
